@@ -1,15 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
-// import {SearchIcon } from '@mui/icons-material/Search';
+import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
+import SendIcon from '@material-ui/icons/Send';
+import PlayCircleFilledWhiteIcon from '@material-ui/icons/PlayCircleFilledWhite';
 
-
-function Button({ text, color, borderColor, img }) {
+function Button({ text, color, borderColor, icon, icon_one, icon_two }) {
+    console.log(icon);
     return (
+        
         <Buttons bgColor = {color} border={borderColor}>
-            {/* <SearchIcon /> */}
-            { img && <img src={img} alt="search" />}
+            
+            {/* { img && <img src={img} alt="search" />} */}
+
+            { icon && <AccountBalanceWalletIcon style= {{'width': "17.5px", "margin-right": "7px",
+                        "display": "flex", "align-items": "center", "justify-content": "center"
+                    }}/> }
+            
+            
             
             <span>{ text }</span>
+
+            { icon_one && <SendIcon style= {{'width': "17.5px", "margin-left": "7px",
+                        "display": "flex", "align-items": "center", "justify-content": "center"
+                    }}/> }
+
+            { icon_two && <PlayCircleFilledWhiteIcon style= {{'width': "17.5px", "margin-left": "7px",
+                        "display": "flex", "align-items": "center", "justify-content": "center", "transform": "rotate(90deg)",
+                    }}/> }
+
         </Buttons>
     )
 }
@@ -32,5 +50,10 @@ const Buttons = styled.button`
         width: 17.5px;
         margin-right: 7px;
         color: white;
+    }
+
+    span {
+        font-size: 1em;
+        font-weight: bold;
     }
 `

@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from './Button'
+import SearchIcon from '@material-ui/icons/Search';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 function Header() {
     return (
@@ -9,10 +12,12 @@ function Header() {
             
             <NavItems>
                 <NavItem>
-                    <a >
-                        <img src="https://img.icons8.com/ios/50/000000/search.png" alt="search" />
-                        <span>Search</span>
-                    </a>
+
+                    <SearchIcon style={{'width': "17.5px", "margin-right": "7px",
+                        "display": "flex", "align-items": "center", "justify-content": "center"
+                    }}/>
+                    <span>Search</span>
+                    
                 </NavItem>
 
                 <NavItem>
@@ -25,13 +30,15 @@ function Header() {
                     <a >Community</a>
                 </NavItem>
                 <NavItem>
-                    {/* <img src="https://img.icons8.com/ios/50/000000/profile.png" alt="search" />
-                    <span>Profile</span> */}
-                    <a>Profile</a>
+                    <AccountCircleIcon style={{'width': "17.5px", "margin-right": "7px",
+                         "display": "flex", "align-items": "center", "justify-content": "center"}}/>
+                    <span>Profile</span>
+                    <ArrowDropDownIcon style={{"width": "24px","height": "24px", "margin-left": "7px",
+                         "display": "flex", "align-items": "center", "justify-content": "center"}}/>
                 </NavItem>
                 <Button text="Create NFT" color= "#141414" borderColor="1px solid #b10ffe"/>
                 <Button text="Connect Wallet" color= "#b10ffe" borderColor="none" 
-                img="https://img.icons8.com/ios/50/000000/wallet.png" />
+                 icon = {true} />
             
             </NavItems>
                 
@@ -45,7 +52,7 @@ export default Header
 
 const Nav = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     height: 70px;
     padding: 0 36px;
@@ -53,6 +60,9 @@ const Nav = styled.div`
 `
 
 const Logo = styled.div`
+    display: flex;
+    align-items: center;
+    flex: 1;
     font-size: 1.5em;
     font-weight: bold;
     color: #b10ffe;
@@ -63,35 +73,13 @@ const NavItems = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
-
-    a {
-        margin-left: 25px;
-        font-size: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        img {
-            width: 17.5px;
-            margin-right: 7px;
-            color: white;
-        }
-        
-    }
 `
 
 const NavItem = styled.div`
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // // width: 100px;
-    // // height: 100%;
-    // // margin-left: 25px;
-    // // font-size: 1em;
-    // // color: #b10ffe;
-    // // text-decoration: none;
-    // // border-bottom: 2px solid #b10ffe;
-    // // transition: all 0.3s ease-in-out;
-`
 
+    margin-left: 25px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
