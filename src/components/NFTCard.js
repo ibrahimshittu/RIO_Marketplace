@@ -42,7 +42,7 @@ function NFTCard() {
 export default NFTCard
 
 const Container = styled.div`
-    width: 250px;
+    width: 270px;
     // display: flex
     // justify-content: flex-end;
     // align-items: center;
@@ -74,11 +74,6 @@ const Price = styled.div`
     display: flex;
     align-items: center;
     Justify-content: space-between;
-
-    
-    
-
-
 `
 
 const BidButtons = styled.div`
@@ -86,11 +81,9 @@ const BidButtons = styled.div`
     align-items: center;
     justify-content: space-between;  
     margin: 0px 10px;
-
 `
 
 const UserImg = styled.div`
-
     display: flex;
     align- items: center;
     Justify-content: center;
@@ -99,7 +92,6 @@ const UserImg = styled.div`
         height: 25px;
         margin-right: 8px;
      }
-
 `
 
 const Pricing = styled.div`

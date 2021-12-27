@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import Hero from './Hero';
-import NFTCard from './NFTCard';
+import Collection from './Collections'
 
 
 function Home() {
     return (
         <Container>
             <Hero/>
-            <NFTCard/>
+            <Collection />
         </Container>
     )
 }
