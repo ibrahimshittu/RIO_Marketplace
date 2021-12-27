@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import FavoriteBorderIcon from '@material-ui/icons//FavoriteBorder';
 
 function NFTCard() {
     return (
@@ -12,7 +13,10 @@ function NFTCard() {
                         Username
                     </UserImg>
                     <Pricing>
-                        <PriceEth>0.5</PriceEth>
+                        <PriceEth>
+                            <img src="/images/Ethereum (ETH).svg" />
+                            0.5
+                        </PriceEth>
                         <PriceDolls>$2800</PriceDolls>
                     </Pricing>
 
@@ -21,6 +25,11 @@ function NFTCard() {
                     <Button1>
                         Place Bid
                     </Button1>
+
+                    <Button2>
+                        <FavoriteBorderIcon style={{ "height": "15px"}}/>
+                        <span>22</span>
+                    </Button2>
 
                 </BidButtons>
 
@@ -55,9 +64,7 @@ const NFTDetails = styled.div`
     
     width: 100%;
     background: black;
-
-    
-    
+    padding-bottom: 10px;
 
 `
 
@@ -75,6 +82,10 @@ const Price = styled.div`
 `
 
 const BidButtons = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    margin: 0px 10px;
 
 `
 
@@ -96,6 +107,10 @@ const Pricing = styled.div`
 
 `
 const PriceEth = styled.div`
+    img {
+        width: 12px;
+        margin-right: 4px;
+     }
     
 
 `
@@ -105,8 +120,8 @@ const PriceDolls = styled.div`
 `
 
 const Button1 = styled.button`
-    width: 80%;
-    padding: 8px 0;
+    width: 75%;
+    padding: 9px 0;
     background: #b10ffe;
     color: white;
     text-align: center;
@@ -114,5 +129,24 @@ const Button1 = styled.button`
     border-radius: 10px;
     border: none;
     
+
+`
+
+const Button2 = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    padding: 8px 8px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #b10ffe;
+
+    span {
+        padding-right: 4px;
+    }
 
 `
