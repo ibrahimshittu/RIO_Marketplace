@@ -12,20 +12,20 @@ function Button({ text, color, borderColor, icon, icon_one, icon_two }) {
             
             {/* { img && <img src={img} alt="search" />} */}
 
-            { icon && <AccountBalanceWalletIcon style= {{'width': "17.5px", "margin-right": "7px",
-                        "display": "flex", "align-items": "center", "justify-content": "center"
+            { icon && <AccountBalanceWalletIcon style= {{'width': "17.5px", "marginRight": "7px",
+                        "display": "flex", "align-items": "center", "justifyContent": "center"
                     }}/> }
             
             
             
             <span>{ text }</span>
 
-            { icon_one && <SendIcon style= {{'width': "17.5px", "margin-left": "7px",
-                        "display": "flex", "align-items": "center", "justify-content": "center"
+            { icon_one && <SendIcon style= {{'width': "17.5px", "marginLeft": "7px",
+                        "display": "flex", "alignItems": "center", "justifyContent": "center",  "transform": "rotate(3200deg)",
                     }}/> }
 
-            { icon_two && <PlayCircleFilledWhiteIcon style= {{'width': "17.5px", "margin-left": "7px",
-                        "display": "flex", "align-items": "center", "justify-content": "center", "transform": "rotate(90deg)",
+            { icon_two && <PlayCircleFilledWhiteIcon style= {{'width': "17.5px", "marginLeft": "7px",
+                        "display": "flex", "alignItems": "center", "justifyContent": "center",
                     }}/> }
 
         </Buttons>
