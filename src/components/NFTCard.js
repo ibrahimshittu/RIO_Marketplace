@@ -53,7 +53,7 @@ const Container = styled.div`
 
 const NFTImg = styled.img`
     margin: 20px 10px;
-    height: 250px;
+    height: 300px;
     margin: 0;
     padding: 0;
     width: 100%;
