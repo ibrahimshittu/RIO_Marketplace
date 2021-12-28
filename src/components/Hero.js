@@ -64,6 +64,7 @@ const Buttons = styled.div`
     button {
         margin-left: 0;
         margin-right: 20px;
+        cursor: pointer;
     }
 
 `

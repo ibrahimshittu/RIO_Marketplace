@@ -10,14 +10,14 @@ function Collections() {
         <Container>
             <Explore>Explore Collections</Explore>
             <SPD>
-                <Button2>
+                {/* <Button2>
                     <span>Search</span>
                     <SearchIcon style={{ "height": "15px"}}/>
-                </Button2>
-                <Button2>
+                </Button2> */}
+                <Button1>
                     <span>Price</span>
-                    <ArrowDropDownIcon style={{ "height": "15px"}}/>
-                </Button2>
+                    <ArrowDropDownIcon style={{ }}/>
+                </Button1>
                 <Button2>
                     <span>Date</span>
                     <CalendarTodayIcon style={{ "height": "15px"}}/>
@@ -31,6 +31,11 @@ function Collections() {
                 <NFTCard />
                 <NFTCard />
             </NFTCollection>
+            <MarketPlace>
+                <Button3>
+                    <span>Explore the marketplace</span>
+                </Button3>
+            </MarketPlace>
         </Container>
     )
 }
@@ -46,7 +51,7 @@ const Explore = styled.div`
     font-size: 24px;
     text-align: center;
     font-weight: 600;
-    padding: 30px 0;
+    // padding: 30px 0;
 
 
 `
@@ -70,7 +75,28 @@ const SPD = styled.div`
     button {
         margin-right: 15px;
     }
+
+    `
+
+const Button1 = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 8px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 1px solid #b10ffe;
+    cursor: pointer;
+
+    span {
+        padding-right: 4px;
+    }
+
 `
+
 const Button2 = styled.button`
     display: flex;
     align-items: center;
@@ -82,6 +108,7 @@ const Button2 = styled.button`
     font-weight: 600;
     border-radius: 15px;
     border: 1px solid #b10ffe;
+    cursor: pointer;
 
     span {
         padding-right: 4px;
@@ -89,3 +116,34 @@ const Button2 = styled.button`
 
 `
 
+const MarketPlace = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+
+`
+
+const Button3 = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 19px;
+    background: #b10ffe;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    // letter-spacing: 0.9px;
+    font-weight: 550;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: #a310e8;
+        
+    }
+
+    
+
+`

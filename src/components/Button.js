@@ -44,6 +44,7 @@ const Buttons = styled.button`
     color: white;
     border: ${props => `${props.border};`};
     margin-left: 20px;
+    cursor: pointer;
 
 
     img {

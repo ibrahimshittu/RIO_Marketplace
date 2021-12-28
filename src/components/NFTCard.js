@@ -5,12 +5,12 @@ import FavoriteBorderIcon from '@material-ui/icons//FavoriteBorder';
 function NFTCard() {
     return (
         <Container>
-            <NFTImg src="/images/Group 5.png"/>
+            <NFTImg src="/images/Rectangle 10.png"/>
             <NFTDetails>
                 <Price>
                     <UserImg>
                         <img src="/images/Ellipse 6.svg" />
-                        Username
+                        Ape Yatch
                     </UserImg>
                     <Pricing>
                         <PriceEth>
@@ -42,13 +42,10 @@ function NFTCard() {
 export default NFTCard
 
 const Container = styled.div`
-    width: 270px;
+    width: 260px;
     // display: flex
     // justify-content: flex-end;
     // align-items: center;
-    
-    
-
 `
 
 const NFTImg = styled.img`
@@ -57,6 +54,7 @@ const NFTImg = styled.img`
     margin: 0;
     padding: 0;
     width: 100%;
+    cursor: pointer;
 
 `
 
@@ -87,6 +85,7 @@ const UserImg = styled.div`
     display: flex;
     align- items: center;
     Justify-content: center;
+    cursor: pointer;
 
     img {
         height: 25px;
@@ -120,6 +119,7 @@ const Button1 = styled.button`
     font-weight: bold;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
     
 
 `
@@ -136,6 +136,7 @@ const Button2 = styled.button`
     font-weight: bold;
     border-radius: 10px;
     border: 1px solid #b10ffe;
+    cursor: pointer;
 
     span {
         padding-right: 4px;
