@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Hero from './Hero';
-import Collection from './Collections'
+import Collection from './Collections';
+import HIWCard from './HIWCard';
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
         <Container>
             <Hero/>
             <Collection />
+            <HIWCard />
         </Container>
     )
 }
