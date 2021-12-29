@@ -1,17 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function HIWCard() {
+function HIWCard({number, header, desc}) {
     return (
         <Container>
             <Number>
-                1
+                {number}
             </Number>
             <Main>
-                Connect Your Wallet
+                {header}
             </Main>
             <Desc>
-                Download and create your wallet and connect it to OpenSea  by clicking on the connect wallet Icon on the top right hand corner
+                {desc}            
             </Desc>
             
         </Container>

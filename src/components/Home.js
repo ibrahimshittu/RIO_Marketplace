@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Hero from './Hero';
 import Collection from './Collections';
-import HIWCard from './HIWCard';
+import HowItWorks from './HowItWorks';
 
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
         <Container>
             <Hero/>
             <Collection />
-            <HIWCard />
+            <HowItWorks />
         </Container>
     )
 }
