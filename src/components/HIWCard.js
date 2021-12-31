@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function HIWCard({number, header, desc}) {
+function HIWCard({number, header, desc, numberBgColor, bgBgColor}) {
     return (
-        <Container>
-            <Number>
+        <Container bColor = {bgBgColor}>
+            <Number bgColor = {numberBgColor} >
                 {number}
             </Number>
             <Main>
@@ -20,15 +20,22 @@ function HIWCard({number, header, desc}) {
 
 export default HIWCard
 
+HIWCard.defaultProps = {
+    numberBgColor: '#b10ffe',
+    bgBgColor: '#b10ffe'
+}
+
 const Container = styled.div`
-    height: 200px;
-    width: 240px;
+    background-color: ${props => `${props.bColor};`}
+    height: 230px;
+    width: 270px;
     border: 1px solid #b10ffe;
     border-radius: 10%;
+    
 
 `
 const Number = styled.div`
-    Background: #b10ffe;
+    Background: ${props => `${props.bgColor};`}
     height: 22px;
     width: 22px;
     margin: 12px 31px;
@@ -37,6 +44,8 @@ const Number = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
+    font-size: 12px 
 
 `
 const Main = styled.div`
