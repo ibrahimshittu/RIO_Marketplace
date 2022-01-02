@@ -38,7 +38,7 @@ const Number = styled.div`
     Background: ${props => `${props.bgColor};`}
     height: 22px;
     width: 22px;
-    margin: 12px 31px;
+    margin: 22px 31px;
     border-radius: 50%;
     text-align: center;
     display: flex;

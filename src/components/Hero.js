@@ -25,9 +25,9 @@ const HeroSection = styled.div`
     display: flex;
     align-items: top;
     justify-content: center;
-    width: calc(455px+682px);
+    // width: calc(455px+682px);
     margin: 0 30px;
-    
+    background: url("/images/Group 49.svg") center center / cover no-repeat;
     `
 const AdSection = styled.div`
     font-size: 64px;
