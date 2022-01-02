@@ -6,7 +6,7 @@ function HowItWorks() {
     return (
         <Container>
             <Heading>Create and sell your NFTs</Heading>
-            <HIW>
+            <HIW style={{ "padding-top": "90px"}}>
                 <HIWContainer style={{ "margin-right": "-30px", "z-index": "1"}}>
                     <HIWCard number="1" header="Connect Your Wallet" bgBgColor='#141414'
                     desc="Download and create your wallet and connect it to OpenSea  by clicking on the connect wallet Icon on the top right hand corner"/>
@@ -56,7 +56,6 @@ const HIW= styled.div`
 
 const HIWContainer = styled.div`
    
-    margin: 20px 0;
 
 
 `
