@@ -46,8 +46,11 @@ const SmallContainer = styled.div`
     justify-content: space-around;
 `
 const LeftSide = styled.div`
+    width: 50%;
+    margin: 0 60px;
+    
     h3 {
-        margin-bottom: 8px;
+        margin-bottom:5px;
     }
 
     p {
@@ -58,7 +61,12 @@ const LeftSide = styled.div`
 
 `
 const RightSide = styled.div`
-    
+        
+        width: 50%;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        flex-direction: column;
 
         p {
             font-size: 12px;
@@ -69,8 +77,12 @@ const RightSide = styled.div`
 `
 
 const SearchBar = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
     input {
-        width: 350px;
+        width: 60%;
         height: 30px;
         border-radius: 15px;
         border: 1px solid #B10FFE;
