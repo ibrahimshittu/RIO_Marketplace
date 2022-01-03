@@ -28,7 +28,7 @@ function Home() {
         <Container>
             <Hero/>
             { NFTdata.length > 0 &&
-            (<Collections />) }
+            (<Collections NFTdata={NFTdata} />) }
             <HowItWorks />
             <Newsletter/>
         </Container>

@@ -5,7 +5,7 @@ import NFTCard from './NFTCard';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 
-function Collections() {
+function Collections({NFTdata}) {
     return (
         <Container>
             <Explore>Explore Collections</Explore>
@@ -24,7 +24,8 @@ function Collections() {
                 </Button2>
             </SPD>
             <NFTCollection>
-                <NFTCard />
+                {NFTdata.map(punk => (
+                <NFTCard name= {punk.name} image={punk.image_original_url}/> ))}
                 <NFTCard />
                 <NFTCard />
                 <NFTCard />

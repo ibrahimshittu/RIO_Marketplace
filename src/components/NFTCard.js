@@ -2,15 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import FavoriteBorderIcon from '@material-ui/icons//FavoriteBorder';
 
-function NFTCard() {
+function NFTCard({name, image}) {
     return (
         <Container>
-            <NFTImg src="/images/Rectangle 10.png"/>
+            <NFTImg src={image} alt="nft image"/>
             <NFTDetails>
                 <Price>
                     <UserImg>
                         <img src="/images/Ellipse 6.svg" />
-                        Ape Yatch
+                        {name}
                     </UserImg>
                     <Pricing>
                         <PriceEth>
