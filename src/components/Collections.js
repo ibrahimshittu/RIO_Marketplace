@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NFTCard from './NFTCard';
-import SearchIcon from '@material-ui/icons/Search';
+// import SearchIcon from '@material-ui/icons/Search';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 
@@ -143,7 +143,4 @@ const Button3 = styled.button`
         background: #a310e8;
         
     }
-
-    
-
 `

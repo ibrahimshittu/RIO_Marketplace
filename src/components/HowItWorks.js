@@ -33,7 +33,7 @@ export default HowItWorks
 
 const Container= styled.div`
     
-    margin: 20px 30px;
+    margin: 90px 30px;
 `
 
 const Heading= styled.div`

@@ -1,16 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import Hero from './Hero';
-import Collection from './Collections';
+import Collections from './Collections';
 import HowItWorks from './HowItWorks';
+import Newsletter from './Newsletter';
+
+
 
 
 function Home() {
     return (
         <Container>
             <Hero/>
-            <Collection />
+            <Collections />
             <HowItWorks />
+            <Newsletter/>
         </Container>
     )
 }
