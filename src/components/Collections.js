@@ -24,19 +24,22 @@ function Collections({NFTdata}) {
                 </Button2>
             </SPD>
             <NFTCollection>
+                
+                <NFTCard name="ohGee" image="/images/Rectangle 5.png" traits="12"
+                profile_img="/images/Ellipse 6.svg"/>
+                <NFTCard name="Balling Kings" image="/images/Rectangle 10 (1).png" traits="16"
+                profile_img="/images/Ellipse 6.svg"/>
+                <NFTCard name="Ghost rider" image="/images/Rectangle 10 (2).png" traits="25"
+                profile_img="/images/Ellipse 6.svg" />
+                <NFTCard name="Angry Folks" image="/images/Rectangle 10 (3).png" traits="21"
+                profile_img="/images/Ellipse 6.svg"/>
+                <NFTCard name="Finnest Nigga" image="/images/Rectangle 10 (5).png" traits="19"
+                profile_img="/images/Ellipse 6.svg"/>
+                <NFTCard name="ohGee Nigga" image="/images/Rectangle 11 (1).png" traits="12"
+                profile_img="/images/Ellipse 6.svg"/>
                 {NFTdata.map(punk => (
                 <NFTCard name={punk.name} image={punk.image_original_url} traits={punk.traits[0]?.value}
                 profile_img={punk.owner.profile_img_url}/> ))}
-                <NFTCard name="ohGee" image="/images/Rectangle 5.svg" traits="12"
-                profile_img="/images/Ellipse 6.svg"/>
-                <NFTCard name="Balling Kings" image="/images/Rectangle 10 (1).png" traits="21"
-                profile_img="/images/Ellipse 6.svg"/>
-                <NFTCard name="Balling Kings" image="/images/Rectangle 10 (1).png" traits="21"
-                profile_img="/images/Ellipse 6.svg" />
-                <NFTCard name="Balling Kings" image="/images/Rectangle 10 (1).png" traits="21"
-                profile_img="/images/Ellipse 6.svg"/>
-                <NFTCard name="Balling Kings" image="/images/Rectangle 10 (1).png" traits="21"
-                profile_img="/images/Ellipse 6.svg"/>
             </NFTCollection>
             <MarketPlace>
                 <Button3>

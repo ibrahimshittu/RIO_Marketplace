@@ -28,7 +28,7 @@ HIWCard.defaultProps = {
 const Container = styled.div`
     background-color: ${props => `${props.bColor};`}
     height: 230px;
-    width: 270px;
+    width: 290px;
     border: 1px solid #b10ffe;
     border-radius: 10%;
     

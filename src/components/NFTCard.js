@@ -55,6 +55,7 @@ const NFTImg = styled.img`
     padding: 0;
     width: 100%;
     cursor: pointer;
+    background: #d8ff00;
 
 `
 
