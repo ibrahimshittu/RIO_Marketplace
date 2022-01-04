@@ -25,12 +25,18 @@ function Collections({NFTdata}) {
             </SPD>
             <NFTCollection>
                 {NFTdata.map(punk => (
-                <NFTCard name= {punk.name} image={punk.image_original_url}/> ))}
-                <NFTCard />
-                <NFTCard />
-                <NFTCard />
-                <NFTCard />
-                <NFTCard />
+                <NFTCard name={punk.name} image={punk.image_original_url} traits={punk.traits[0]?.value}
+                profile_img={punk.owner.profile_img_url}/> ))}
+                <NFTCard name="ohGee" image="/images/Rectangle 5.svg" traits="12"
+                profile_img="/images/Ellipse 6.svg"/>
+                <NFTCard name="Balling Kings" image="/images/Rectangle 10 (1).png" traits="21"
+                profile_img="/images/Ellipse 6.svg"/>
+                <NFTCard name="Balling Kings" image="/images/Rectangle 10 (1).png" traits="21"
+                profile_img="/images/Ellipse 6.svg" />
+                <NFTCard name="Balling Kings" image="/images/Rectangle 10 (1).png" traits="21"
+                profile_img="/images/Ellipse 6.svg"/>
+                <NFTCard name="Balling Kings" image="/images/Rectangle 10 (1).png" traits="21"
+                profile_img="/images/Ellipse 6.svg"/>
             </NFTCollection>
             <MarketPlace>
                 <Button3>

@@ -2,20 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 import FavoriteBorderIcon from '@material-ui/icons//FavoriteBorder';
 
-function NFTCard({name, image}) {
+function NFTCard({name, image, profile_img, traits}) {
     return (
         <Container>
             <NFTImg src={image} alt="nft image"/>
             <NFTDetails>
                 <Price>
                     <UserImg>
-                        <img src="/images/Ellipse 6.svg" />
+                        <img src={profile_img} />
                         {name}
                     </UserImg>
                     <Pricing>
                         <PriceEth>
                             <img src="/images/Ethereum (ETH).svg" />
-                            0.5
+                            {traits}
                         </PriceEth>
                         <PriceDolls>$2800</PriceDolls>
                     </Pricing>
@@ -86,10 +86,12 @@ const UserImg = styled.div`
     align- items: center;
     Justify-content: center;
     cursor: pointer;
+    
 
     img {
         height: 25px;
         margin-right: 8px;
+        border-radius: 50%;
      }
 `
 
