@@ -72,6 +72,7 @@ const RightSide = styled.div`
             font-size: 12px;
             margin-top: 0;
             margin-bottom: 0;
+            margin-left: -155px;
         }
 
 `

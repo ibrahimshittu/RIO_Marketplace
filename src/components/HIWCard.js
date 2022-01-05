@@ -38,7 +38,7 @@ const Number = styled.div`
     Background: ${props => `${props.bgColor};`}
     height: 22px;
     width: 22px;
-    margin: 22px 31px;
+    margin: 22px 41px;
     border-radius: 50%;
     text-align: center;
     display: flex;
@@ -51,13 +51,13 @@ const Number = styled.div`
 const Main = styled.div`
     font-size: 18px;
     line-height: 15px;
-    margin: 12px 31px;
+    margin: 12px 41px;
     font-weight: 600;
 
 `
 const Desc = styled.div`
     font-size: 12px;
-    margin: 22px 31px;
+    margin: 22px 41px;
     font-weight: 600;
 
 `
