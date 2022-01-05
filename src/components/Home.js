@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Collections from './Collections';
 import HowItWorks from './HowItWorks';
 import Newsletter from './Newsletter';
+import Footer from './Footer';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -31,6 +32,7 @@ function Home() {
             (<Collections NFTdata={NFTdata} />) }
             <HowItWorks />
             <Newsletter/>
+            <Footer/>
         </Container>
     )
 }
