@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import BottomFooter from './BottomFooter';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -24,9 +25,7 @@ function Footer() {
                     
                 </RightPart>
             </TopFooter>
-            <BottomFooter>
-
-            </BottomFooter>
+            <BottomFooter/>
         </Container>
     )
 }
@@ -43,9 +42,6 @@ const TopFooter = styled.div`
     align-items: center; 
     justify-content: space-between;
     margin: 30px 30px;
-
-`
-const BottomFooter = styled.div`
 
 `
 const LeftPart = styled.div`
