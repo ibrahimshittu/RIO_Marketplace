@@ -1,5 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 function Footer() {
     return (
@@ -10,7 +14,14 @@ function Footer() {
                     <p>The Foremost NFT marketplace</p>
                 </LeftPart>
                 <RightPart>
-                    Join Our Community
+                    <p>Join Our Community</p>
+                    <BottomIcons>
+                        <TwitterIcon style={{"height":"50%"}}/>
+                        <InstagramIcon/>
+                        <FacebookIcon/>
+                        <GitHubIcon/>
+                    </BottomIcons>
+                    
                 </RightPart>
             </TopFooter>
             <BottomFooter>
@@ -23,6 +34,7 @@ function Footer() {
 export default Footer
 
 const Container = styled.div`
+    margin-top: 90px;
 
 `
 
@@ -37,8 +49,21 @@ const BottomFooter = styled.div`
 
 `
 const LeftPart = styled.div`
+    h3{
+        letter-spacing: 1.4px;
+        
+    }
 
 `
 
 const RightPart = styled.div`
+`
+
+const BottomIcons = styled.div`
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    &:first-child {
+        height: 50%; 
+    }
 `
