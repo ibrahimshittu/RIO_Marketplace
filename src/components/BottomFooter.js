@@ -19,9 +19,11 @@ function BottomFooter() {
             <SecondColumn>
                 <h5>Company</h5>
                 <ul>
+                    <li>About Us</li>
                     <li>Careers</li>
                     <li>Terms and Condition</li>
                     <li>Privacy Policy</li>
+                    <li>Disclaimer</li>
                     
                 </ul>
             </SecondColumn>
@@ -106,9 +108,8 @@ const FourthColumn = styled(FirstColumn)`
 const FifthColumn = styled(FirstColumn)`
 
     ul {
-        li {
-            // text-align: start;
-        }
+        padding-left: 0;
+        
     }
     
     

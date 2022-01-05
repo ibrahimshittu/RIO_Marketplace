@@ -9,6 +9,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 function Footer() {
     return (
         <Container>
+            <div style={{"background": "#141414", "height": "15px", "margin-right": "0"}}></div>
             <TopFooter>
                 <LeftPart>
                     <h3>RIO</h3>
@@ -17,14 +18,15 @@ function Footer() {
                 <RightPart>
                     <p>Join Our Community</p>
                     <BottomIcons>
-                        <TwitterIcon style={{"height":"50%"}}/>
-                        <InstagramIcon/>
-                        <FacebookIcon/>
-                        <GitHubIcon/>
+                        <TwitterIcon style={{"width":"18px"}}/>
+                        <InstagramIcon style={{"width":"18px"}}/>
+                        <FacebookIcon style={{"width":"18px"}}/>
+                        <GitHubIcon style={{"width":"18px"}}/>
                     </BottomIcons>
                     
                 </RightPart>
             </TopFooter>
+            <div style={{"background": "#141414", "height": "15px", "margin-bottom": "10px", }}></div>
             <BottomFooter/>
         </Container>
     )
@@ -41,7 +43,7 @@ const TopFooter = styled.div`
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    margin: 30px 30px;
+    margin: 10px 30px;
 
 `
 const LeftPart = styled.div`
