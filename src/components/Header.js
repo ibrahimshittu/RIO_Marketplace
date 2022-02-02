@@ -4,21 +4,25 @@ import Button from './Button'
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import { useWeb3 } from "@3rdweb/hooks" 
+
+
 
 function Header() {
+    const { connectWallet, address, error } = useWeb3();
     return (
         <Nav>
             <Logo> RIO</Logo>
             
             <NavItems>
-                <NavItem>
+                {/* <NavItem>
 
                     <SearchIcon style={{'width': "17.5px", "margin-right": "7px",
                         "display": "flex", "align-items": "center", "justify-content": "center"
                     }}/>
                     <span>Search</span>
                     
-                </NavItem>
+                </NavItem> */}
 
                 <NavItem>
                     <a >Blog</a>
@@ -37,8 +41,15 @@ function Header() {
                          "display": "flex", "align-items": "center", "justify-content": "center"}}/>
                 </NavItem>
                 <Button text="Create NFT" color= "#141414" borderColor="1px solid #b10ffe"/>
-                <Button text="Connect Wallet" color= "#b10ffe" borderColor="none" 
-                 icon = {true} />
+                <div className="">
+                    {address ? (
+                    <p className="">
+                        {address}
+                    </p>
+                    ) : (
+                    <Button text="Connect Wallet" color= "#b10ffe" borderColor="none" 
+                    icon = {true}  click={() => connectWallet('injected')}/> )}
+                </div>
             
             </NavItems>
                 

@@ -4,19 +4,15 @@ import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import SendIcon from '@material-ui/icons/Send';
 import PlayCircleFilledWhiteIcon from '@material-ui/icons/PlayCircleFilledWhite';
 
-function Button({ text, color, borderColor, icon, icon_one, icon_two }) {
+function Button({ text, color, borderColor, icon, icon_one, icon_two, click }) {
     console.log(icon);
     return (
         
-        <Buttons bgColor = {color} border={borderColor}>
-            
-            {/* { img && <img src={img} alt="search" />} */}
+        <Buttons bgColor = {color} border={borderColor} onClick={click}>
 
             { icon && <AccountBalanceWalletIcon style= {{'width': "17.5px", "marginRight": "7px",
                         "display": "flex", "align-items": "center", "justifyContent": "center"
                     }}/> }
-            
-            
             
             <span>{ text }</span>
 
