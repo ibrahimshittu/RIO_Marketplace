@@ -33,28 +33,25 @@ function Header() {
                 <NavItem>
                     <a >Community</a>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                     <AccountCircleIcon style={{'width': "17.5px", "margin-right": "7px",
                          "display": "flex", "align-items": "center", "justify-content": "center"}}/>
                     <span>Profile</span>
                     <ArrowDropDownIcon style={{"width": "24px","height": "24px", "margin-left": "7px",
                          "display": "flex", "align-items": "center", "justify-content": "center"}}/>
-                </NavItem>
+                </NavItem> */}
                 <Button text="Create NFT" color= "#141414" borderColor="1px solid #b10ffe"/>
-                <div className="">
+                <ConnectWallet className="">
                     {address ? (
-                    <p className="">
-                        {address}
-                    </p>
+                    <div className="address">
+                        <p className="wallet">Wallet Connected</p>
+                        <p><small>{address.slice(0, 7)}...{address.slice(35)}</small></p>
+                    </div>
                     ) : (
                     <Button text="Connect Wallet" color= "#b10ffe" borderColor="none" 
                     icon = {true}  click={() => connectWallet('injected')}/> )}
-                </div>
-            
+                </ConnectWallet>
             </NavItems>
-                
-            
-           
         </Nav>
     )
 }
@@ -94,4 +91,25 @@ const NavItem = styled.div`
     align-items: center;
     justify-content: center;
     cursor: pointer;
+`
+
+const ConnectWallet = styled.div`
+
+    .address {
+        margin-bottom: 0;
+        margin-left: 25px;
+        
+
+        .wallet {
+            color: #b10ffe;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            
+        }
+    }
+
 `
