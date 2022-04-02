@@ -6,7 +6,7 @@ function Hero() {
     return (
         <HeroSection>
             <AdSection>
-                <Text> <a>Metaverse</a> all inclusive marketplace</Text>
+                <Text> <a href='/'>Metaverse</a> all inclusive marketplace</Text>
                 <p>Explore, buy and sell rare collections of amazing NFTs</p>
                 <Buttons> 
                     <Button text="Get Started" color= "#b10ffe" borderColor="none" icon_one={true}  />

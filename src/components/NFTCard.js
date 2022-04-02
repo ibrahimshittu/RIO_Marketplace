@@ -9,12 +9,12 @@ function NFTCard({name, image, profile_img, traits}) {
             <NFTDetails>
                 <Price>
                     <UserImg>
-                        <img src={profile_img} />
+                        <img src={profile_img} alt="" />
                         {name}
                     </UserImg>
                     <Pricing>
                         <PriceEth>
-                            <img src="/images/Ethereum (ETH).svg" />
+                            <img src="/images/Ethereum (ETH).svg" alt="" />
                             {traits}
                         </PriceEth>
                         <PriceDolls>$2800</PriceDolls>

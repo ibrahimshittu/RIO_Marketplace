@@ -1,15 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from './Button'
-import SearchIcon from '@material-ui/icons/Search';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import { useWeb3 } from "@3rdweb/hooks" 
 
 
 
 function Header() {
-    const { connectWallet, address, error } = useWeb3();
+    const { connectWallet, address } = useWeb3();
     return (
         <Nav>
             <Logo> RIO</Logo>
@@ -25,13 +22,13 @@ function Header() {
                 </NavItem> */}
 
                 <NavItem>
-                    <a >Blog</a>
+                    <a href='/'>Blog</a>
                 </NavItem>
                 <NavItem>
-                    <a >Marketplace</a>
+                    <a href='/'>Marketplace</a>
                 </NavItem>
                 <NavItem>
-                    <a >Community</a>
+                    <a href='/'>Community</a>
                 </NavItem>
                 {/* <NavItem>
                     <AccountCircleIcon style={{'width': "17.5px", "margin-right": "7px",
