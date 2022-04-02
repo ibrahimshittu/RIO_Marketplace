@@ -22,13 +22,13 @@ function Header() {
                 </NavItem> */}
 
                 <NavItem>
-                    <a href='/'>Blog</a>
+                    <a href='/' style={{textDecoration: "none"}} >Blog</a>
                 </NavItem>
                 <NavItem>
-                    <a href='/'>Marketplace</a>
+                    <a href='/' style={{textDecoration: "none"}}>Marketplace</a>
                 </NavItem>
                 <NavItem>
-                    <a href='/'>Community</a>
+                    <a href='/'style={{textDecoration: "none"}}>Community</a>
                 </NavItem>
                 {/* <NavItem>
                     <AccountCircleIcon style={{'width': "17.5px", "margin-right": "7px",
@@ -38,16 +38,25 @@ function Header() {
                          "display": "flex", "align-items": "center", "justify-content": "center"}}/>
                 </NavItem> */}
                 <Button text="Create NFT" color= "#141414" borderColor="1px solid #b10ffe"/>
+                {typeof window.ethereum !== 'undefined' ? (
+                    
+                    
                 <ConnectWallet className="">
+                    
+                        
+
                     {address ? (
                     <div className="address">
                         <p className="wallet">Wallet Connected</p>
                         <p><small>{address.slice(0, 7)}...{address.slice(35)}</small></p>
                     </div>
-                    ) : (
+                    ) : ( 
                     <Button text="Connect Wallet" color= "#b10ffe" borderColor="none" 
                     icon = {true}  click={() => connectWallet('injected')}/> )}
                 </ConnectWallet>
+                ) 
+                : 
+                (<Button text="Install Metamask" color= "#b10ffe" borderColor="none"/>)}
             </NavItems>
         </Nav>
     )
